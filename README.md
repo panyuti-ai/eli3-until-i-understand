@@ -40,6 +40,28 @@ ELI3 is "even younger than five" — the explanation is allowed to slow down, go
 6. **One analogy, all the way through.** Pick one picture and stick with it.
 7. **Until I understand.** If it still doesn't click, keep going. Don't stop at "done."
 
-## Status
+## Install
 
-🚧 Work in progress. Coming next: a `/eli3` skill for Claude Code, so you can type `/eli3 <topic>` and get explanations that follow these rules automatically.
+`/eli3` is a [Claude Code](https://claude.com/claude-code) skill.
+
+**Use it everywhere (recommended).** Copy the skill into your personal skills folder:
+
+```bash
+git clone https://github.com/panyuti-ai/eli3-until-i-understand.git
+```
+
+```bash
+mkdir -p ~/.claude/skills && cp -r eli3-until-i-understand/.claude/skills/eli3 ~/.claude/skills/
+```
+
+**Use it only inside this repo.** Nothing to install: open Claude Code in this folder and `/eli3` is already there.
+
+To update later, run `git pull` inside the cloned folder and copy it again.
+
+## Usage
+
+```
+/eli3 Docker
+```
+
+Claude walks you through prerequisites → the problem → where the old way got stuck → the new thing → so what, using one analogy the whole way. At the end it asks which step didn't click. Point at one, and it re-explains just that step until it does.
