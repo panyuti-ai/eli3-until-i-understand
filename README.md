@@ -13,17 +13,7 @@ But here's what I kept running into as a developer:
 
 That's the gap. **Readable is not the same as understandable.**
 
-A typical ELI5 answer for "What is WebGPU?" looks like this:
-
-> "WebGPU lets websites use your graphics card to draw things and do math really fast."
-
-Every word is simple. But a beginner's brain immediately fills up with questions:
-
-- What does a graphics card actually do that the normal processor can't?
-- Couldn't websites already use it before?
-- If they could, why did we need something new?
-
-ELI5 swapped the vocabulary, but it skipped the **chain of reasons**. Without that chain, you just memorize a sentence. You don't understand anything.
+ELI5 swaps the vocabulary, but it often skips the **chain of reasons**. Without that chain, you just memorize a sentence. You don't understand anything.
 
 ## Why a developer still needs ELI3
 
@@ -49,25 +39,6 @@ ELI3 is "even younger than five" — the explanation is allowed to slow down, go
 5. **Prerequisites first.** If a concept is needed to understand the next step, explain it *before* that step.
 6. **One analogy, all the way through.** Pick one picture and stick with it.
 7. **Until I understand.** If it still doesn't click, keep going. Don't stop at "done."
-
-## Example: WebGPU in ELI3 (short version)
-
-Your computer has two brains. The **CPU** is a genius professor: solves anything, but only a few problems at a time. The **GPU** is a classroom of thousands of kids: each one only knows simple math, but they all work at the same time.
-
-Your screen has millions of dots, redrawn 60 times a second. Each dot needs a simple "what color am I?" calculation. That's perfect for the classroom of kids. AI works the same way: tons of simple multiplications.
-
-But a website is code written by strangers, so the browser can't let it walk into the classroom directly. It has to fill out a form at the **front desk**, and the desk checks it first.
-
-The old front desk (**WebGL**) was designed when GPUs were only for drawing. It only accepted "please draw this" forms. Want the kids to do AI math? You had to disguise your numbers as colors, draw them, then read them back. And the desk checked every single form one by one, so most of the time was spent waiting in line.
-
-**WebGPU** is the new front desk, designed for how modern GPUs actually work:
-- You can directly say "please calculate these numbers" — no disguising.
-- You can hand over a whole stack of forms at once, checked one time.
-
-**So what?** Websites can now run AI models on your own machine, play real 3D games, and edit video right in the browser.
-
-The whole chain:
-screens and AI need tons of simple math → GPUs are great at that → websites must go through the browser's front desk for safety → the old desk only understood drawing and was slow → the new desk understands math and accepts batches → websites can do much more.
 
 ## Status
 
